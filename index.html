@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>UrbanWear</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Streetza | Streetwear Fashion</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      max-width: 500px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 15px 35px;
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to UrbanWear</h1>
-  <p>Fashion | Streetwear | Style</p>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>STREETZA</h1>
+    <p>Bold streetwear for the new generation.  
+       Style that speaks. Fashion that moves.</p>
+    <a href="#collection" class="btn">Explore Collection</a>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="section" id="collection">
+    <h2>Why Streetza?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🔥 Trendy Designs</h3>
+        <p>Inspired by modern street culture & bold fashion.</p>
+      </div>
+      <div class="card">
+        <h3>👕 Premium Quality</h3>
+        <p>Comfortable fabrics made for daily wear.</p>
+      </div>
+      <div class="card">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick & reliable shipping across India.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <h2>Join the Streetza Movement</h2>
+    <p>Follow us on Instagram & stay updated with new drops.</p>
+    <a href="#" class="btn">Follow on Instagram</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Streetza. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
